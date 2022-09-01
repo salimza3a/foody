@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  /* fonts */
+  --font-roboto: "Roboto", sans-serif;
+
+  /* colors */
+  --color-gray: #f3f4f6;
+  --color-red: #d63626;
+  --color-white: #ffffff;
+  --color-gray-second: #828282;
+}
