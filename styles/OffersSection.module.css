@@ -1,8 +1,9 @@
 .card_container {
   display: flex;
   width: 76%;
-  margin: 0 auto;
+  margin: 10% auto;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .card_text_wrapper {
   width: 50%;
@@ -12,6 +13,7 @@
   font-size: 5rem;
   line-height: 1.2;
   font-weight: 900;
+  margin-bottom: 3rem;
 }
 
 .card_text {
@@ -19,7 +21,5 @@
   font-family: var(--font-roboto);
   font-weight: 400;
   line-height: 1.5;
-}
-
-.img_container {
+  color: var(--color-gray-second);
 }

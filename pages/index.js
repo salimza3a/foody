@@ -2,8 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 import FeaturesSection from "../components/FeaturesSection";
 import MainSection from "../components/MainSection";
+import NewFoodsSection from "../components/NewFoodsSection";
 import OffersSection from "../components/OffersSection";
-export default function Home() {
+import { getOffersValues } from "../pages/api/offers";
+export default function Home({ data }) {
   return (
     <>
       <Head>
@@ -13,8 +15,19 @@ export default function Home() {
       <main>
         <MainSection />
         <FeaturesSection />
-        <OffersSection />
+        <OffersSection {...data} />
+        <NewFoodsSection />
       </main>
     </>
   );
+}
+
+export async function getStaticProps(context) {
+  const res = await getOffersValues.then((res) => res.data);
+
+  return {
+    props: {
+      data: res,
+    },
+  };
 }
