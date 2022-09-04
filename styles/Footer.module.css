@@ -1,3 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap");
 .container {
   margin-top: auto;
+}
+
+.footerContainer {
+  background-color: #181617;
+  display: flex;
+  padding: 10rem 8rem 10rem 10rem;
+  justify-content: space-around;
+  max-height: 38.5rem;
+}
+
+.contacts {
+  width: 30.2%;
+}
+.contactText {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-gray-second);
+  margin-bottom: 1rem;
+}
+
+.socialMedias {
+  display: flex;
+}
+
+.socialMedias > li + li {
+  margin-left: 2rem;
+}
+
+.imgLogo {
+  filter: brightness(0) invert(1);
+}
+
+.otherThings span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 1.9;
+  color: var(--color-white);
+}
+
+.otherThings li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.9;
+  color: var(--color-white);
+}
+
+.otherThings {
+  display: flex;
+  width: 42%;
+  justify-content: space-between;
+}
+
+.info {
+  background-color: #181617;
+  color: #ffffff;
+  font-family: var(--font-roboto);
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.999;
+  text-align: center;
+}
+
+.smallTouch {
+  color: peru;
 }

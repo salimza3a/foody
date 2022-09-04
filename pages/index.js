@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import DiscoverSection from "../components/DiscoverSection";
 import FeaturesSection from "../components/FeaturesSection";
 import MainSection from "../components/MainSection";
 import NewFoodsSection from "../components/NewFoodsSection";
@@ -17,6 +18,7 @@ export default function Home({ data }) {
         <FeaturesSection />
         <OffersSection {...data} />
         <NewFoodsSection />
+        <DiscoverSection />
       </main>
     </>
   );
