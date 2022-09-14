@@ -1,10 +1,12 @@
 import styles from "../../styles/Navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import HamburgerMenu from "../../utils/HamburgerMenu";
 function NavbarPage() {
   return (
     <>
       <div className={styles.container}>
+        <HamburgerMenu />
         <span className={styles.logo_image}>
           <Link href="/">
             <a>
